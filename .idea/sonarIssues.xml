@@ -8,6 +8,36 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/dao/FilmDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/entity/FilmEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/entity/FilmParentEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/entity/FilmPeopleCrossRef.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/entity/FilmSpeciesCrossRef.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/entity/PeopleParentEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <value>
             <set />
@@ -33,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/dao/GhibliCrossRefDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/dao/LocationDao.kt">
           <value>
             <set />
@@ -44,6 +79,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/dao/SpecieDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/dao/SpeciesDao.kt">
           <value>
             <set />
           </value>
@@ -304,6 +344,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/dao/AddressDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/dao/UserDao.kt">
           <value>
             <set />
           </value>

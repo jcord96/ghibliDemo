@@ -14,10 +14,10 @@ data class FilmPeopleCrossRef(
     val peopleId: String
 )
 
-@Entity(primaryKeys = ["filmId", "specieId"])
+@Entity(primaryKeys = ["filmId", "speciesId"])
 data class FilmSpeciesCrossRef(
     val filmId: String,
-    val specieId: String
+    val speciesId: String
 )
 
 @Entity(primaryKeys = ["filmId", "vehicleId"])

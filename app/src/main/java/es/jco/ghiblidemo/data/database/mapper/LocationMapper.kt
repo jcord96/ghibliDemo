@@ -3,6 +3,7 @@ package es.jco.ghiblidemo.data.database.mapper
 import es.jco.domain.Location as LocationDomain
 import es.jco.ghiblidemo.data.database.entity.LocationEntity
 import es.jco.ghiblidemo.data.database.entity.LocationParentEntity
+import java.util.*
 
 fun LocationEntity.toDomain() = LocationDomain(
     this.locationId,
@@ -23,7 +24,7 @@ fun LocationParentEntity.toDomain() = LocationDomain(
 )
 
 fun LocationDomain.toEntity() = LocationEntity(
-    this.id,
+    this.id ?: UUID.randomUUID().toString(),
     this.name,
     this.climate,
     this.terrain,

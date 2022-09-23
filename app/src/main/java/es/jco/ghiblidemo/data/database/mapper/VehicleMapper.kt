@@ -3,6 +3,7 @@ package es.jco.ghiblidemo.data.database.mapper
 import es.jco.domain.Vehicle as VehicleDomain
 import es.jco.ghiblidemo.data.database.entity.VehicleEntity
 import es.jco.ghiblidemo.data.database.entity.VehicleParentEntity
+import java.util.*
 
 fun VehicleEntity.toDomain() = VehicleDomain(
     this.vehicleId,
@@ -23,7 +24,7 @@ fun VehicleParentEntity.toDomain() = VehicleDomain(
 )
 
 fun  VehicleDomain.toEntity() = VehicleEntity(
-    this.id,
+    this.id ?: UUID.randomUUID().toString(),
     this.name,
     this.description,
     this.vehicleClass,

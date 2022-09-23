@@ -2,6 +2,7 @@ package es.jco.ghiblidemo.data.database.mapper
 
 import es.jco.ghiblidemo.data.database.entity.FilmEntity
 import es.jco.ghiblidemo.data.database.entity.FilmParentEntity
+import java.util.*
 import es.jco.domain.Film as FilmDomain
 
 
@@ -41,7 +42,7 @@ fun FilmParentEntity.toDomain() = FilmDomain(
 )
 
 fun FilmDomain.toEntity() = FilmEntity(
-        this.id,
+        this.id ?: UUID.randomUUID().toString(),
         this.title,
         this.originalTitle,
         this.originalTitleRomanised,

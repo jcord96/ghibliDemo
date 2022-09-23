@@ -3,6 +3,7 @@ package es.jco.ghiblidemo.data.database.mapper
 import es.jco.domain.Species as SpeciesDomain
 import es.jco.ghiblidemo.data.database.entity.SpeciesEntity
 import es.jco.ghiblidemo.data.database.entity.SpeciesParentEntity
+import java.util.*
 
 fun SpeciesEntity.toDomain() = SpeciesDomain(
     this.speciesId,
@@ -23,7 +24,7 @@ fun SpeciesParentEntity.toDomain() = SpeciesDomain(
 )
 
 fun SpeciesDomain.toEntity() = SpeciesEntity(
-    this.id,
+    this.id ?: UUID.randomUUID().toString(),
     this.name,
     this.classification,
     this.eyeColors,

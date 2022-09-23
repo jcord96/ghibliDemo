@@ -3,6 +3,7 @@ package es.jco.ghiblidemo.data.database.mapper
 import es.jco.domain.People as PeopleDomain
 import es.jco.ghiblidemo.data.database.entity.PeopleEntity
 import es.jco.ghiblidemo.data.database.entity.PeopleParentEntity
+import java.util.*
 
 fun PeopleEntity.toDomain() = PeopleDomain(
     this.peopleId,
@@ -25,7 +26,7 @@ fun PeopleParentEntity.toDomain() = PeopleDomain(
 )
 
 fun PeopleDomain.toEntity() = PeopleEntity(
-        this.id,
+        this.id ?: UUID.randomUUID().toString(),
         this.name,
         this.gender,
         this.age,

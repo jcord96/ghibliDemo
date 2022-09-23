@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Entity
 data class PeopleEntity (
-    @PrimaryKey(autoGenerate = true) var peopleId: String?,
+    @PrimaryKey var peopleId: String,
     var name: String?,
     var gender: String?,
     var age: String?,
@@ -15,6 +15,6 @@ data class PeopleEntity (
 
 data class PeopleParentEntity(
     @Embedded val people: PeopleEntity?,
-    @Relation(entity = PeopleEntity::class, parentColumn = "speciesId", entityColumn = "speciesId") val species: SpeciesEntity?,
-    @Relation(entity = FilmEntity::class, parentColumn = "peopleId", entityColumn = "filmId", associateBy = Junction(FilmPeopleCrossRef::class)) val films: List<FilmEntity>?
+    @Relation(parentColumn = "speciesId", entityColumn = "speciesId") val species: SpeciesEntity?,
+    @Relation(parentColumn = "peopleId", entityColumn = "filmId", associateBy = Junction(FilmPeopleCrossRef::class)) val films: List<FilmEntity>?
 )

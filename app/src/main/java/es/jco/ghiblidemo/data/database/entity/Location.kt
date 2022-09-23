@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Entity
 data class LocationEntity (
-    @PrimaryKey(autoGenerate = true) var locationId: String?,
+    @PrimaryKey var locationId: String,
     var name: String?,
     var climate: String?,
     var terrain: String?,

@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Entity
 data class FilmEntity (
-    @PrimaryKey(autoGenerate = true) var filmId: String?,
+    @PrimaryKey var filmId: String,
     var title: String?,
     var originalTitle: String?,
     var originalTitleRomanised: String?,
@@ -20,8 +20,8 @@ data class FilmEntity (
 
 data class FilmParentEntity(
     @Embedded val film: FilmEntity?,
-    @Relation(entity = PeopleEntity::class, parentColumn = "filmId", entityColumn = "peopleId", associateBy = Junction(FilmPeopleCrossRef::class)) val people: List<PeopleEntity>?,
-    @Relation(entity = SpeciesEntity::class, parentColumn = "filmId", entityColumn = "speciesId", associateBy = Junction(FilmSpeciesCrossRef::class)) val species: List<SpeciesEntity>?,
-    @Relation(entity = LocationEntity::class, parentColumn = "filmId", entityColumn = "locationId", associateBy = Junction(FilmLocationCrossRef::class)) val locations: List<LocationEntity>?,
-    @Relation(entity = VehicleEntity::class, parentColumn = "filmId", entityColumn = "vehicleId", associateBy = Junction(FilmVehicleCrossRef::class)) val vehicles: List<VehicleEntity>?
+    @Relation(parentColumn = "filmId", entityColumn = "peopleId", associateBy = Junction(FilmPeopleCrossRef::class)) val people: List<PeopleEntity>?,
+    @Relation(parentColumn = "filmId", entityColumn = "speciesId", associateBy = Junction(FilmSpeciesCrossRef::class)) val species: List<SpeciesEntity>?,
+    @Relation(parentColumn = "filmId", entityColumn = "locationId", associateBy = Junction(FilmLocationCrossRef::class)) val locations: List<LocationEntity>?,
+    @Relation(parentColumn = "filmId", entityColumn = "vehicleId", associateBy = Junction(FilmVehicleCrossRef::class)) val vehicles: List<VehicleEntity>?
 )

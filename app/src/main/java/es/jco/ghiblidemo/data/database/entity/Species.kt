@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Entity
 data class SpeciesEntity (
-    @PrimaryKey(autoGenerate = true) var speciesId: String?,
+    @PrimaryKey var speciesId: String,
     var name: String?,
     var classification: String?,
     var eyeColors: String?,
@@ -14,5 +14,5 @@ data class SpeciesEntity (
 data class SpeciesParentEntity(
     @Embedded val species: SpeciesEntity?,
     @Relation(entity = PeopleEntity::class, parentColumn = "speciesId", entityColumn = "speciesId") val peoples: List<PeopleEntity>?,
-    @Relation(entity = FilmEntity::class, parentColumn = "speciesId", entityColumn = "filmId", associateBy = Junction(FilmPeopleCrossRef::class)) val films: List<FilmEntity>?
+    @Relation(parentColumn = "speciesId", entityColumn = "filmId", associateBy = Junction(FilmSpeciesCrossRef::class)) val films: List<FilmEntity>?
 )
