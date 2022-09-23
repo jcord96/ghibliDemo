@@ -30,6 +30,6 @@ abstract class AppRoomDatabase : RoomDatabase() {
     abstract fun filmDao(): FilmDao
     abstract fun locationDao(): LocationDao
     abstract fun peopleDao(): PeopleDao
-    abstract fun specieDao(): SpeciesDao
+    abstract fun speciesDao(): SpeciesDao
     abstract fun vehicleDao(): VehicleDao
 }

@@ -9,11 +9,11 @@ interface PeopleDao {
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: PeopleEntity): Long
+    suspend fun insert(people: PeopleEntity): Long
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(users: List<PeopleEntity>): List<Long>
+    suspend fun insertAll(people: List<PeopleEntity>): List<Long>
 
     @Transaction
     @Query("SELECT * FROM PeopleEntity WHERE peopleId = :peopleId")
@@ -22,4 +22,8 @@ interface PeopleDao {
     @Transaction
     @Query("SELECT * FROM PeopleEntity")
     suspend fun getPeople(): List<PeopleParentEntity>
+
+    @Transaction
+    @Query("SELECT COUNT(*) FROM PeopleEntity")
+    suspend fun countPeople(): Long
 }

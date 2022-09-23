@@ -7,5 +7,5 @@ data class Location (
     var terrain: String? = null,
     var surfaceWater: Int? = null,
     var residents: List<People> = listOf(),
-    var film: List<Film> = listOf()
+    var films: List<Film> = listOf()
 )

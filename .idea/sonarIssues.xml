@@ -263,12 +263,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/buildSrc/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/buildSrc/src/main/kotlin/Libs.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/buildSrc/src/main/kotlin/Versions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/common/Response.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/common/ResultData.kt">
           <value>
             <set />
           </value>
@@ -293,7 +313,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/repository/SpeciesRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/repository/VehicleRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/source/LocalDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/es/jco/data/source/RemoteDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/build.gradle">
           <value>
             <set />
           </value>
@@ -343,6 +383,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/usecases/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/dao/AddressDao.kt">
           <value>
             <set />
@@ -354,6 +399,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/mapper/AddressMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/data/src/main/java/es/jco/data/common/Response.kt">
           <value>
             <set />
           </value>

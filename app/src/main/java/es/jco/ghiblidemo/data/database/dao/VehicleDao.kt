@@ -9,11 +9,11 @@ interface VehicleDao {
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: VehicleEntity): Long
+    suspend fun insert(vehicle: VehicleEntity): Long
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(users: List<VehicleEntity>): List<Long>
+    suspend fun insertAll(vehicles: List<VehicleEntity>): List<Long>
 
     @Transaction
     @Query("SELECT * FROM VehicleEntity WHERE vehicleId = :vehicleId")
@@ -22,4 +22,8 @@ interface VehicleDao {
     @Transaction
     @Query("SELECT * FROM VehicleEntity")
     suspend fun getVehicles(): List<VehicleParentEntity>
+
+    @Transaction
+    @Query("SELECT COUNT(*) FROM VehicleEntity")
+    suspend fun countVehicles(): Long
 }

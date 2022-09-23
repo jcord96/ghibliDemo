@@ -36,6 +36,6 @@ object Libs {
 
     val androidTestLibs = listOf(
         "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
-        "androidx.test.ext:junit-ktx:${Versions.junitKtx}",
+        "androidx.test.ext:junit-ktx:${Versions.junitKtx}"
     )
 }

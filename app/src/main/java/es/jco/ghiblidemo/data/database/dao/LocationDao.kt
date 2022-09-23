@@ -9,11 +9,11 @@ interface LocationDao {
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: LocationEntity): Long
+    suspend fun insert(location: LocationEntity): Long
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(users: List<LocationEntity>): List<Long>
+    suspend fun insertAll(locations: List<LocationEntity>): List<Long>
 
     @Transaction
     @Query("SELECT * FROM LocationEntity WHERE locationId = :locationId")
@@ -22,4 +22,8 @@ interface LocationDao {
     @Transaction
     @Query("SELECT * FROM LocationEntity")
     suspend fun getLocations(): List<LocationParentEntity>
+
+    @Transaction
+    @Query("SELECT COUNT(*) FROM LocationEntity")
+    suspend fun countLocations(): Long
 }

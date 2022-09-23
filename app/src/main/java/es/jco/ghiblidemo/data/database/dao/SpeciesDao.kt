@@ -9,11 +9,11 @@ interface SpeciesDao {
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: SpeciesEntity): Long
+    suspend fun insert(species: SpeciesEntity): Long
 
     @Transaction
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(users: List<SpeciesEntity>): List<Long>
+    suspend fun insertAll(species: List<SpeciesEntity>): List<Long>
 
     @Transaction
     @Query("SELECT * FROM SpeciesEntity WHERE speciesId = :speciesId")
@@ -22,4 +22,8 @@ interface SpeciesDao {
     @Transaction
     @Query("SELECT * FROM SpeciesEntity")
     suspend fun getSpecies(): List<SpeciesParentEntity>
+
+    @Transaction
+    @Query("SELECT COUNT(*) FROM SpeciesEntity")
+    suspend fun countSpecies(): Long
 }
