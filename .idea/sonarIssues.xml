@@ -58,6 +58,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/entity/FilmCrossRef.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/entity/GhibliCrossRef.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/entity/Location.kt">
           <value>
             <set />
@@ -73,7 +83,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/entity/Species.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/entity/Vehicle.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/mapper/FilmMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/mapper/LocationMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/mapper/PeopleMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/mapper/SpeciesMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/database/mapper/VehicleMapper.kt">
           <value>
             <set />
           </value>
@@ -98,6 +138,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/dto/FilmDTO.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/dto/Location.kt">
           <value>
             <set />
@@ -113,7 +158,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/dto/Species.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/dto/Vehicle.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/mapper/FilmMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/mapper/LocationMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/mapper/PeopleMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/mapper/SpeciesMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/server/mapper/VehicleMapper.kt">
           <value>
             <set />
           </value>
@@ -208,6 +283,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/es/jco/domain/Species.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/domain/src/main/java/es/jco/domain/Vehicle.kt">
           <value>
             <set />
@@ -224,6 +304,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/dao/AddressDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/mapper/AddressMapper.kt">
           <value>
             <set />
           </value>
