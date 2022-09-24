@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GhibliDemo</string>
+
+    <string name="ad_title_error_loading_data">Failure loading data</string>
+    <string name="ad_message_error_loading_data">Error during loading users data</string>
+    <string name="ad_continue">Continue</string>
+
+    <string name="error_input_required">This input is required</string>
+    <string name="error_unexpected">Unexpected error</string>
 </resources>

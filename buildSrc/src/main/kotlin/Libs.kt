@@ -1,7 +1,9 @@
 object Libs {
     val androidLibs = listOf(
         "androidx.core:core-ktx:${Versions.core}",
+        "androidx.fragment:fragment-ktx:${Versions.fragment}",
         "androidx.appcompat:appcompat:${Versions.appCompat}",
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}",
         "com.google.android.material:material:${Versions.material}",
         "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}",
         "com.google.dagger:hilt-android:${Versions.hilt}",

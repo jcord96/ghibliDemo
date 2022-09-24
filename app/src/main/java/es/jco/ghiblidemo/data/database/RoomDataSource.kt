@@ -1,5 +1,6 @@
 package es.jco.ghiblidemo.data.database
 
+import android.util.Log
 import es.jco.data.source.LocalDataSource
 import es.jco.domain.*
 import es.jco.ghiblidemo.data.database.entity.*
@@ -13,6 +14,10 @@ import javax.inject.Inject
  * @constructor Create empty Room data source
  */
 class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDatabase) : LocalDataSource {
+
+    companion object {
+        private val TAG = RoomDataSource::class.qualifiedName
+    }
     
     private val ghibliCrossRefDao = appRoomDatabase.ghibliCrossRefDao()
     private val filmDao = appRoomDatabase.filmDao()
@@ -31,6 +36,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     override suspend fun insertFilm(film: Film) {
         val filmEntity = film.toEntity()
 
+        Log.i(TAG, "Film to insert")
         filmDao.insert( filmEntity )
         ghibliCrossRefDao.insertAllFilmPeopleCrossRef( film.people.filter { it.id != null }.map { FilmPeopleCrossRef(filmEntity.filmId, it.id!!) } )
         ghibliCrossRefDao.insertAllFilmLocationCrossRef( film.locations.filter { it.id != null }.map { FilmLocationCrossRef(filmEntity.filmId, it.id!!) } )
@@ -60,6 +66,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
             filmVehicleCrossRefList.addAll( filmToInsert.vehicles.filter { it.id != null }.map { FilmVehicleCrossRef(filmEntity.filmId, it.id!!) } )
         }
 
+        Log.i(TAG, "Films to insert: ${filmList.size}")
         filmDao.insertAll(filmList)
         ghibliCrossRefDao.insertAllFilmPeopleCrossRef( filmPeopleCrossRefList )
         ghibliCrossRefDao.insertAllFilmLocationCrossRef( filmLocationCrossRefList)
@@ -86,6 +93,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     override suspend fun insertLocation(location: Location) {
         val locationEntity = location.toEntity()
 
+        Log.i(TAG, "Location to insert")
         locationDao.insert(locationEntity)
         ghibliCrossRefDao.insertAllLocationPeopleCrossRef( location.residents.filter { it.id != null }.map { LocationPeopleCrossRef(locationEntity.locationId, it.id!!) })
         ghibliCrossRefDao.insertAllFilmLocationCrossRef( location.films.filter { it.id != null }.map { FilmLocationCrossRef(it.id!!, locationEntity.locationId ) } )
@@ -109,6 +117,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
             filmLocationCrossRefList.addAll( locationToInsert.films.filter { it.id != null }.map { FilmLocationCrossRef(it.id!!, locationEntity.locationId) } )
         }
 
+        Log.i(TAG, "Locations to insert: ${locationList.size}")
         locationDao.insertAll(locationList)
         ghibliCrossRefDao.insertAllLocationPeopleCrossRef( locationPeopleCrossRefList )
         ghibliCrossRefDao.insertAllFilmLocationCrossRef( filmLocationCrossRefList )
@@ -132,6 +141,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     override suspend fun insertPeople(people: People) {
         val peopleEntity = people.toEntity()
 
+        Log.i(TAG, "People to insert")
         peopleDao.insert(peopleEntity)
         ghibliCrossRefDao.insertAllFilmPeopleCrossRef( people.films.filter { it.id != null }.map { FilmPeopleCrossRef(it.id!!, peopleEntity.peopleId) } )
 
@@ -154,6 +164,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
             filmPeopleCrossRefList.addAll( peopleToInsert.films.filter { it.id != null }.map { FilmPeopleCrossRef(it.id!!, peopleEntity.peopleId) } )
         }
 
+        Log.i(TAG, "People to insert: ${peopleList.size}")
         peopleDao.insertAll(peopleList)
         ghibliCrossRefDao.insertAllFilmPeopleCrossRef( filmPeopleCrossRefList )
     }
@@ -176,6 +187,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     override suspend fun insertSpecies(species: Species) {
         val speciesEntity = species.toEntity()
 
+        Log.i(TAG, "Species to insert")
         speciesDao.insert(speciesEntity)
         ghibliCrossRefDao.insertAllFilmSpeciesCrossRef( species.films.filter { it.id != null }.map { FilmSpeciesCrossRef(it.id!!, speciesEntity.speciesId) } )
     }
@@ -197,6 +209,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
             filmSpeciesCrossRefList.addAll( speciesToInsert.films.filter { it.id != null }.map { FilmSpeciesCrossRef(it.id!!, speciesEntity.speciesId) } )
         }
 
+        Log.i(TAG, "Species to insert: ${species.size}")
         speciesDao.insertAll(speciesList)
         ghibliCrossRefDao.insertAllFilmSpeciesCrossRef( filmSpeciesCrossRefList )
     }
@@ -219,6 +232,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     override suspend fun insertVehicle(vehicle: Vehicle) {
         val vehicleEntity = vehicle.toEntity()
 
+        Log.i(TAG, "Vehicle to insert")
         vehicleDao.insert(vehicleEntity)
         ghibliCrossRefDao.insertAllFilmVehicleCrossRef( vehicle.films.filter { it.id != null }.map { FilmVehicleCrossRef(it.id!!, vehicleEntity.vehicleId) } )
     }
@@ -240,6 +254,7 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
             filmVehicleCrossRefList.addAll( vehicleToInsert.films.filter { it.id != null }.map { FilmVehicleCrossRef(it.id!!, vehicleEntity.vehicleId) } )
         }
 
+        Log.i(TAG, "Vehicles to insert: ${vehicleList.size}")
         vehicleDao.insertAll(vehicleList)
         ghibliCrossRefDao.insertAllFilmVehicleCrossRef( filmVehicleCrossRefList )
     }

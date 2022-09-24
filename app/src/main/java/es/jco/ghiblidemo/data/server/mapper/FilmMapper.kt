@@ -1,5 +1,6 @@
 package es.jco.ghiblidemo.data.server.mapper
 
+import es.jco.ghiblidemo.data.commons.searchId
 import es.jco.ghiblidemo.data.server.dto.FilmDTO
 import es.jco.domain.Film as FilmDomain
 import es.jco.domain.Location as LocationDomain
@@ -20,8 +21,8 @@ fun FilmDTO.toDomain() = FilmDomain(
     this.releaseDate.toIntOrNull(),
     this.runningTime.toIntOrNull(),
     this.rtScore.toIntOrNull(),
-    this.people.map { PeopleDomain(id = it) },
-    this.species.map { SpeciesDomain(id = it) },
-    this.locations.map { LocationDomain(id = it) },
-    this.vehicles.map { VehicleDomain(id = it) }
+    this.people.filter { !it.searchId().isNullOrEmpty() }.map { PeopleDomain(id = it.searchId()) },
+    this.species.filter { !it.searchId().isNullOrEmpty() }.map { SpeciesDomain(id = it.searchId()) },
+    this.locations.filter { !it.searchId().isNullOrEmpty() }.map { LocationDomain(id = it.searchId()) },
+    this.vehicles.filter { !it.searchId().isNullOrEmpty() }.map { VehicleDomain(id = it.searchId()) }
 )
