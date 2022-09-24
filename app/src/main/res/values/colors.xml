@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Palette generated with color tool: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=1c9b66 -->
+    <color name="color_primary">#81c9ac</color>
+    <color name="color_primary_variant">#22a16c</color>
+    <color name="color_secondary">#ffff</color>
+    <color name="color_secondary_variant">#1c9b67</color>
+    <color name="color_accent">#1c909b</color>
+
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +15,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="ic_launcher_background">@color/color_primary</color>
 </resources>

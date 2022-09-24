@@ -1,6 +1,8 @@
 object Versions {
-    const val appCompat = "1.5.0"
+    const val appCompat = "1.5.1"
+    const val constraintLayout = "2.1.4"
     const val core = "1.8.0"
+    const val fragment = "1.3.2"
     const val coroutines = "1.6.4"
     const val hilt = "2.38.1"
     const val junit = "4.13.2"
