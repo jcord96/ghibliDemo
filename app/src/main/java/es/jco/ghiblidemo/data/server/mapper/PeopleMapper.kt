@@ -1,5 +1,6 @@
 package es.jco.ghiblidemo.data.server.mapper
 
+import es.jco.ghiblidemo.data.commons.searchId
 import es.jco.ghiblidemo.data.server.dto.PeopleDTO
 import es.jco.domain.Film as FilmDomain
 import es.jco.domain.People as PeopleDomain
@@ -12,6 +13,6 @@ fun PeopleDTO.toDomain() = PeopleDomain(
     this.age,
     this.eyeColor,
     this.hairColor,
-    this.films.map { FilmDomain(id = it) },
-    SpeciesDomain(id = this.species)
+    this.films.filter { !it.searchId().isNullOrEmpty() }.map { FilmDomain(id = it.searchId()) },
+    SpeciesDomain(id = this.species.searchId())
 )

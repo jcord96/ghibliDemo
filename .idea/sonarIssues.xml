@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/hilt/component_sources/debug/es/jco/ghiblidemo/presentation/ui/GhibliDemoApp_HiltComponents.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/data/database/dao/FilmDao.java">
           <value>
             <set />
@@ -38,7 +43,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/di/SplashScreenActivityModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/data/commons/DataExtensions.kt">
           <value>
             <set />
           </value>
@@ -253,7 +268,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/di/di.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/common/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/GhibliDemoApp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/splashscreen/SplashScreenActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/splashscreen/SplashScreenViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/themes.xml">
           <value>
             <set />
           </value>
@@ -388,6 +438,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/usecases/src/main/java/es/jco/usecases/LoadDataUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/dao/AddressDao.kt">
           <value>
             <set />
@@ -399,6 +459,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/data/database/mapper/AddressMapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/common/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/common/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/ui/splashscreen/SplashScreenActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/buildSrc/src/main/kotlin/Libs.kt">
           <value>
             <set />
           </value>

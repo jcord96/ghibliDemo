@@ -19,6 +19,10 @@ class ServerDataSource @Inject constructor(
     private val apiService: APIService,
     private val requestDispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : RemoteDataSource {
+
+    companion object {
+        private val TAG = ServerDataSource::class.qualifiedName
+    }
     
     /**
      * Request to get  films

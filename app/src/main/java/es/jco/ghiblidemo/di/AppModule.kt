@@ -16,6 +16,7 @@ import es.jco.ghiblidemo.data.server.APIService
 import es.jco.ghiblidemo.data.server.ServerConstants
 import es.jco.ghiblidemo.data.server.ServerDataSource
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -39,6 +40,7 @@ object AppModule {
         // Annotation -> To improve the request security, if the API had an API KEY, it could be
         //               added to the header in an HTTP interceptor
         return OkHttpClient.Builder()
+            .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
             .connectTimeout(ServerConstants.HTTP_CONNECT_TIMEOUT, TimeUnit.MINUTES)
             .readTimeout(ServerConstants.HTTP_READ_TIMEOUT, TimeUnit.MINUTES)
             .writeTimeout(ServerConstants.HTTP_WRITE_TIMEOUT, TimeUnit.MINUTES)
