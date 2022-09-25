@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.detail.DetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/detail_layout_margin_bottom">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/film_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/example_film_banner" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_film_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_title_margin_start"
+                android:layout_marginEnd="@dimen/detail_title_margin_end"
+                android:layout_marginBottom="@dimen/detail_title_margin_bottom"
+                android:enabled="false"
+                app:boxBackgroundMode="none"
+                app:layout_constraintStart_toStartOf="@id/film_banner"
+                app:layout_constraintTop_toBottomOf="@id/film_banner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/film_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:paddingStart="@dimen/detail_input_padding_start"
+                    android:paddingEnd="@dimen/detail_input_padding_end"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/detail_title_text_size"
+                    android:textStyle="bold"
+                    tools:text="The Tale of the Princess Kaguya" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_info_film"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_info_film_margin_top"
+                app:layout_constraintEnd_toEndOf="@id/film_banner"
+                app:layout_constraintTop_toBottomOf="@id/layout_film_title">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_film_release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/detail_layout_margin_start"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@id/layout_film_release_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/film_score">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_calendar" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/film_release_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/detail_input_margin_start"
+                        tools:text="1996" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_film_running_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/detail_layout_margin_start"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@id/film_score"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_film_release_date">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_time" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/film_running_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/detail_input_margin_start"
+                        tools:text="1:45h" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/film_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/detail_input_margin_end"
+                    android:isIndicator="true"
+                    android:progressTint="@color/color_primary"
+                    android:stepSize="0.01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aux_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_input_margin_start"
+                android:text="@string/detail_textview_synopsis"
+                android:textSize="@dimen/detail_aux_description_text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_info_film" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/detail_input_margin_start"
+                android:layout_marginEnd="@dimen/detail_input_margin_end"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@id/aux_description"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_film_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_layout_margin_start"
+                android:layout_marginTop="@dimen/detail_description_margin_top"
+                android:layout_marginEnd="@dimen/detail_layout_margin_end"
+                android:enabled="false"
+                app:boxBackgroundMode="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aux_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/film_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    tools:text="The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world." />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

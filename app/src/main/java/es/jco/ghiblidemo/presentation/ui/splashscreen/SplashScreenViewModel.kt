@@ -35,7 +35,7 @@ class SplashScreenViewModel @Inject constructor(
     }
 
     /**
-     * Function to load the users from server and save them in db
+     * Function to load the films from server and save them in db
      *
      */
     private fun loadData() = viewModelScope.launch {

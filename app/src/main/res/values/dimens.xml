@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_recycler_padding">5dp</dimen>
+
+    <dimen name="main_item_layout_margin">5dp</dimen>
+    <dimen name="main_item_button">5dp</dimen>
+
+    <dimen name="detail_layout_margin_start">10dp</dimen>
+    <dimen name="detail_layout_margin_end">10dp</dimen>
+    <dimen name="detail_layout_margin_top">15dp</dimen>
+    <dimen name="detail_layout_margin_bottom">15dp</dimen>
+
+    <dimen name="detail_title_margin_start">10dp</dimen>
+    <dimen name="detail_title_margin_end">10dp</dimen>
+    <dimen name="detail_title_margin_bottom">10dp</dimen>
+    <dimen name="detail_title_text_size">25dp</dimen>
+
+    <dimen name="detail_input_padding_start">10dp</dimen>
+    <dimen name="detail_input_padding_end">10dp</dimen>
+    <dimen name="detail_input_margin_start">10dp</dimen>
+    <dimen name="detail_input_margin_end">10dp</dimen>
+
+    <dimen name="detail_info_film_margin_top">5dp</dimen>
+    <dimen name="detail_aux_description_text_size">20dp</dimen>
+    <dimen name="detail_description_margin_top">5dp</dimen>
+    <dimen name="main_item_card_corner">4dp</dimen>
+    <dimen name="main_item_card_elevation">4dp</dimen>
+
+
+</resources>

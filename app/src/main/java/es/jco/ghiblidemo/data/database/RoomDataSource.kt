@@ -4,7 +4,10 @@ import android.util.Log
 import es.jco.data.source.LocalDataSource
 import es.jco.domain.*
 import es.jco.ghiblidemo.data.database.entity.*
+import es.jco.ghiblidemo.data.database.mapper.toDomain
 import es.jco.ghiblidemo.data.database.mapper.toEntity
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 /**
@@ -73,6 +76,41 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
         ghibliCrossRefDao.insertAllFilmSpeciesCrossRef( filmSpeciesCrossRefList )
         ghibliCrossRefDao.insertAllFilmVehicleCrossRef( filmVehicleCrossRefList )
 
+    }
+
+    /**
+     * Function to get film by id
+     *
+     * @param filmId
+     * @return
+     */
+    override suspend fun getFilmById(filmId: String): Film = filmDao.getFilmById(filmId).toDomain()
+
+    /**
+     * Function to get live films
+     *
+     * @return flow with films list
+     */
+    override fun getFilmsUpdatable(): Flow<List<Film>> =
+        filmDao.getFilmsUpdatable().map { it.map { film -> film.toDomain() } }
+
+
+    /**
+     * Function to delete film by film id
+     *
+     * @param filmId
+     * @return
+     */
+    override suspend fun deleteFilm(filmId: String): Boolean {
+        Log.i(TAG, "Film to delete: $filmId")
+        filmDao.deleteFilm(filmId)
+
+        ghibliCrossRefDao.deleteFilmLocationCrossRefByFilmId(filmId)
+        ghibliCrossRefDao.deleteFilmPeopleCrossRefByFilmId(filmId)
+        ghibliCrossRefDao.deleteFilmSpeciesCrossRefByFilmId(filmId)
+        ghibliCrossRefDao.deleteFilmVehicleCrossRefByFilmId(filmId)
+
+        return true
     }
 
     /**

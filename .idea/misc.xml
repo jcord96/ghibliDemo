@@ -5,8 +5,20 @@
       <map>
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/bg_gradient.xml" value="0.2885" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_android.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_calendar.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_delete.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_edit.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_remove.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_save.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_time.xml" value="0.4405" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/splash_background.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/activity_detail.xml" value="0.3739800543970988" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/activity_splash_screen.xml" value="0.28020833333333334" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/view_media_item_main.xml" value="0.33" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/menu/menu_detail.xml" value="0.28020833333333334" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/menu/menu_main.xml" value="0.2791666666666667" />
+        <entry key="..\:/Users/Juan/.gradle/caches/transforms-3/33a14326874eb94ddb12c96fdefb1d2a/transformed/appcompat-1.5.1/res/drawable/abc_ratingbar_small_material.xml" value="0.4405" />
       </map>
     </option>
   </component>
