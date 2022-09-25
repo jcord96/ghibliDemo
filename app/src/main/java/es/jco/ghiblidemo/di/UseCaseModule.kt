@@ -5,9 +5,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import es.jco.data.repository.*
-import es.jco.usecases.DeleteFilmUseCase
-import es.jco.usecases.GetFilmsUseCase
-import es.jco.usecases.LoadDataUseCase
+import es.jco.usecases.*
 
 /**
  * Use case module
@@ -29,7 +27,13 @@ object UseCaseModule {
     ) = LoadDataUseCase(filmRepository, locationRepository, peopleRepository, speciesRepository, vehicleRepository)
 
     @Provides
+    fun getFilmByIdUseCaseProvider(filmRepository: FilmRepository) = GetFilmByIdUseCase(filmRepository)
+
+    @Provides
     fun getFilmsUseCaseProvider(filmRepository: FilmRepository) = GetFilmsUseCase(filmRepository)
+
+    @Provides
+    fun saveFilmUseCaseProvider(filmRepository: FilmRepository) = SaveFilmUseCase(filmRepository)
 
     @Provides
     fun deleteFilmUseCaseProvider(filmRepository: FilmRepository) = DeleteFilmUseCase(filmRepository)

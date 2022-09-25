@@ -7,6 +7,7 @@ interface LocalDataSource {
 
     suspend fun insertFilm(film: Film)
     suspend fun insertFilms(films: List<Film>)
+    suspend fun getFilmById(filmId: String): Film
     fun getFilmsUpdatable(): Flow<List<Film>>
     suspend fun deleteFilm(filmId: String): Boolean
     suspend fun countFilms(): Long
