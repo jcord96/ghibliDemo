@@ -1,5 +1,6 @@
 package es.jco.ghiblidemo.presentation.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -11,6 +12,8 @@ import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
 import es.jco.ghiblidemo.R
 import es.jco.ghiblidemo.databinding.ActivityMainBinding
+import es.jco.ghiblidemo.presentation.common.KEY_FILM
+import es.jco.ghiblidemo.presentation.ui.detail.DetailActivity
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.launchIn
@@ -45,7 +48,9 @@ class MainActivity(
                 viewModel.onDeleteFilm(film)
             } else {
                 Log.i(TAG, "Selected film: ${film.title}")
-                // TODO: Next activity
+                startActivity(
+                    Intent(this, DetailActivity::class.java).putExtra(KEY_FILM, film.id!!)
+                )
             }
         }
     }
@@ -88,7 +93,7 @@ class MainActivity(
      */
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
-        return true;
+        return true
     }
 
     /**

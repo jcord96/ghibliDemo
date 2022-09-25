@@ -17,6 +17,9 @@ import javax.inject.Inject
 /**
  * Main view model
  *
+ * @property requestDispatcher
+ * @property getFilmsUseCase
+ * @property deleteFilmUseCase
  * @constructor Create empty Main view model
  */
 @HiltViewModel

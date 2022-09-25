@@ -79,6 +79,14 @@ class RoomDataSource @Inject constructor(private val appRoomDatabase: AppRoomDat
     }
 
     /**
+     * Function to get film by id
+     *
+     * @param filmId
+     * @return
+     */
+    override suspend fun getFilmById(filmId: String): Film = filmDao.getFilmById(filmId).toDomain()
+
+    /**
      * Function to get live films
      *
      * @return flow with films list

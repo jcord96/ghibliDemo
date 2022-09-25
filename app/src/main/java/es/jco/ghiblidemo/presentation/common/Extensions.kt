@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AlertDialog
+import java.math.RoundingMode
 
 /**
  * Inflate layouts
@@ -31,8 +32,21 @@ fun Context.showErrorDialog(message: Int, acceptButton: Int, acceptListener: Dia
     .create()
     .show()
 
+/**
+ * To px
+ *
+ * @param dp
+ */
 fun Context.toPx(dp: Float) = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.displayMetrics)
 
+/**
+ * Translate view for Y
+ *
+ * @param alpha
+ * @param translateBy
+ * @param duration
+ * @param startingDelay
+ */
 fun View.translateYBy(
     alpha: Float = 0f,
     translateBy: Float = 50f,
@@ -43,3 +57,17 @@ fun View.translateYBy(
         .setStartDelay(startingDelay)
         .setDuration(duration).start()
 }
+
+/**
+ * Get hour text from minutes
+ *
+ * @return
+ */
+fun Int.toHourText(): String = "${(this / 60).toString().padStart(2, '0')}:${(this % 60).toString().padStart(2, '0')}"
+
+/**
+ * Round to specific decimals
+ *
+ * @param numDecimal
+ */
+fun Float.roundDecimals(numDecimal: Int) = this.toBigDecimal().setScale(numDecimal, RoundingMode.HALF_UP).toFloat()

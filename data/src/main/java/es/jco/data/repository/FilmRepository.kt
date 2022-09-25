@@ -25,9 +25,26 @@ class FilmRepository(
         }
     }
 
-    suspend fun getFilms(): ResultData<Flow<List<Film>>> {
+    suspend fun getFilm(filmId: String): ResultData<Film> {
+        return try {
+            ResultData.success(localDataSource.getFilmById(filmId))
+        } catch (exception: Exception) {
+            ResultData.failure(exception)
+        }
+    }
+
+    fun getFilms(): ResultData<Flow<List<Film>>> {
         return try {
             ResultData.success(localDataSource.getFilmsUpdatable())
+        } catch (exception: Exception) {
+            ResultData.failure(exception)
+        }
+    }
+
+    suspend fun saveFilm(film: Film): ResultData<Boolean> {
+        return try {
+            localDataSource.insertFilm(film)
+            ResultData.success(true)
         } catch (exception: Exception) {
             ResultData.failure(exception)
         }

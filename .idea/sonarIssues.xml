@@ -63,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/es/jco/ghiblidemo/presentation/ui/detail/DetailViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <value>
             <set />
@@ -288,12 +293,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/common/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/common/Extensions.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/GhibliDemoApp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/detail/DetailActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/es/jco/ghiblidemo/presentation/ui/detail/DetailViewModel.kt">
           <value>
             <set />
           </value>
@@ -338,12 +358,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_calendar.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_remove.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_save.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_time.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml">
           <value>
             <set />
           </value>
@@ -358,12 +403,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/menu/menu_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
           <value>
             <set />
           </value>
@@ -513,12 +568,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/usecases/src/main/java/es/jco/usecases/GetFilmByIdUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/usecases/src/main/java/es/jco/usecases/GetFilmsUseCase.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/usecases/src/main/java/es/jco/usecases/LoadDataUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/usecases/src/main/java/es/jco/usecases/SaveFilmUseCase.kt">
           <value>
             <set />
           </value>
@@ -553,12 +618,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/ui/detail/DetailActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/ui/detail/DetailViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/ui/main/MainViewModel.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/java/es/jco/demo/presentation/ui/splashscreen/SplashScreenActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/app/src/main/res/layout/activity_detail.xml">
           <value>
             <set />
           </value>
@@ -574,6 +654,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/data/src/main/java/es/jco/data/common/Response.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../PROBATIONEM/desarrollo/100-codigo/kotlinDemo/usecases/src/main/java/es/jco/usecases/GetUserByIdUseCase.kt">
           <value>
             <set />
           </value>
