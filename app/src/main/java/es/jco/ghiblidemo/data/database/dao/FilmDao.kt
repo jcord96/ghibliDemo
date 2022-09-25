@@ -3,6 +3,7 @@ package es.jco.ghiblidemo.data.database.dao
 import androidx.room.*
 import es.jco.ghiblidemo.data.database.entity.FilmEntity
 import es.jco.ghiblidemo.data.database.entity.FilmParentEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface FilmDao {
@@ -24,6 +25,14 @@ interface FilmDao {
     suspend fun getFilms(): List<FilmParentEntity>
 
     @Transaction
+    @Query("SELECT * FROM FilmEntity")
+    fun getFilmsUpdatable(): Flow<List<FilmParentEntity>>
+
+    @Transaction
     @Query("SELECT COUNT(*) FROM FilmEntity")
     suspend fun countFilms(): Long
+
+    @Transaction
+    @Query("DELETE FROM FilmEntity WHERE filmId = :filmId")
+    fun deleteFilm(filmId: String)
 }

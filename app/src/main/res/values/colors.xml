@@ -6,6 +6,7 @@
     <color name="color_secondary">#ffff</color>
     <color name="color_secondary_variant">#1c9b67</color>
     <color name="color_accent">#1c909b</color>
+    <color name="color_delete">#525149</color>
 
 
     <color name="purple_200">#FFBB86FC</color>

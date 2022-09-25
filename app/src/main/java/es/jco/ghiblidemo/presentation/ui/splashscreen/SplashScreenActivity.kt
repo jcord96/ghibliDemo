@@ -1,5 +1,6 @@
 package es.jco.ghiblidemo.presentation.ui.splashscreen
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
@@ -10,6 +11,7 @@ import es.jco.ghiblidemo.R
 import es.jco.ghiblidemo.databinding.ActivitySplashScreenBinding
 import es.jco.ghiblidemo.presentation.common.State
 import es.jco.ghiblidemo.presentation.common.showErrorDialog
+import es.jco.ghiblidemo.presentation.ui.main.MainActivity
 import kotlinx.coroutines.launch
 
 /**
@@ -57,7 +59,8 @@ class SplashScreenActivity : AppCompatActivity() {
      * Private function to start the main activity
      */
     private fun startMainActivity() {
-        // TODO: Next activity
+        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+        finish()
     }
 
     /**
