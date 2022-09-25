@@ -1,11 +1,14 @@
 package es.jco.data.source
 
 import es.jco.domain.*
+import kotlinx.coroutines.flow.Flow
 
 interface LocalDataSource {
 
     suspend fun insertFilm(film: Film)
     suspend fun insertFilms(films: List<Film>)
+    fun getFilmsUpdatable(): Flow<List<Film>>
+    suspend fun deleteFilm(filmId: String): Boolean
     suspend fun countFilms(): Long
 
     suspend fun insertLocation(location: Location)

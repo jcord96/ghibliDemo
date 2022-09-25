@@ -2,6 +2,7 @@ package es.jco.ghiblidemo.presentation.common
 
 import android.content.Context
 import android.content.DialogInterface
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,3 +30,16 @@ fun Context.showErrorDialog(message: Int, acceptButton: Int, acceptListener: Dia
     .setCancelable(false)
     .create()
     .show()
+
+fun Context.toPx(dp: Float) = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.displayMetrics)
+
+fun View.translateYBy(
+    alpha: Float = 0f,
+    translateBy: Float = 50f,
+    duration: Long = 0L,
+    startingDelay: Long = 5
+) {
+    animate().alpha(alpha).translationYBy(context.toPx(translateBy))
+        .setStartDelay(startingDelay)
+        .setDuration(duration).start()
+}

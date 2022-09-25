@@ -5,8 +5,13 @@
       <map>
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/bg_gradient.xml" value="0.2885" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_android.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_delete.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/ic_remove.xml" value="0.2885" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/drawable/splash_background.xml" value="0.2885" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/activity_splash_screen.xml" value="0.28020833333333334" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/layout/view_media_item_main.xml" value="0.33" />
+        <entry key="..\:/Proyectos/FORUM/desarrollo/100-codigo/ghibliDemo/app/src/main/res/menu/menu_main.xml" value="0.2791666666666667" />
       </map>
     </option>
   </component>
